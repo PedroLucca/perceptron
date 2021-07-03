@@ -9,5 +9,5 @@ for i in variaveis:
     novo_array.append(i.split(" "))
 variaveis = novo_array
 
-pc = Perceptron(2)
-print(pc.n)
+pc = Perceptron(2, variaveis)
+pc.algoritmo()
