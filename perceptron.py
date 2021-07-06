@@ -59,14 +59,13 @@ class Perceptron:
             
             if passo >= 4:
                 passo = 0
+                self.k = self.k + 1
+                print("** Iteração : ", self.k)
+                print("Entradas: ", self.x_var)
+                print("Erro: ", erro)
+                print("Pesos: ", self.pesos)
+                print("-------------\n")
             
-            self.k = self.k + 1
-
-            print("** Iteração : ", self.k)
-            print("Entradas: ", self.x_var)
-            print("Erro: ", erro)
-            print("Pesos: ", self.pesos)
-            print("-------------\n")
 
             if self.parada == 4:
                 break
